@@ -1,23 +1,28 @@
-public class ArrayDiagonalSum {
+package Test_01;
 
-     public static void main(String[] args) {
-            int[][] array = {
-              {7, 2, 9, 1},
-              {4, 8, 2, 7},
-              {8, 13, 19, 10},
-              {13, 12, 16, 14}
-            };
+public class Array_2D_Sum {
 
-            int primaryDiagonalSum = 0;
-            int secondaryDiagonalSum = 0;
+	public static void main(String[] args) {
+		int[][] array = {
+	              {7, 2, 9, 1},
+	              {4, 8, 2, 7},
+	              {8, 13, 19, 10},
+	              {13, 12, 16, 14}
+	            };
 
-            for (int i = 0; i < array.length; i++) {
-              primaryDiagonalSum += array[i][i];
-              secondaryDiagonalSum += array[i][array.length - i - 1];
-            }
+	            int primaryDiagonalSum = 0;
+	            int secondaryDiagonalSum = 0;
 
-            System.out.println("Primary Diagonal Sum: " + primaryDiagonalSum);
-            System.out.println("Secondary Diagonal Sum: " + secondaryDiagonalSum);
-          }
+	            for (int i = 0; i < array.length; i++) {
+	              primaryDiagonalSum += array[i][i];
+	              secondaryDiagonalSum += array[i][array.length - i - 1];
+	            }
 
-}
+	            System.out.println("Primary Diagonal Sum: " + primaryDiagonalSum);
+	            System.out.println("Secondary Diagonal Sum: " + secondaryDiagonalSum);
+	          }
+
+	}
+
+
+
