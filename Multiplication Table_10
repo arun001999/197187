@@ -1,21 +1,26 @@
 package Test_01;
 
-public class Multiplication_Tables {
+import java.util.Scanner;
 
-	public static void main(String[] args) {
-		
-		int n;
-		n=2;
-		for(int i=1;i<=n;i++)
-			
+public class Interactive_Multiplication_Table {
+
+public static void main(String[] args) {
+	
+	Scanner scanner = new Scanner(System.in);
+	System.out.print("Enter value"+" "+"="+" ");
+	int value=scanner.nextInt();
+	int i;
+		for( i=1;i<=value;i++)
 		{
-			System.out.println("\n"+"Table for"+""+i+"\n");
+			System.out.println("\n"+"\t"+"Table for "+""+i+"\n");
 			for(int j=1;j<=10;j++)
 			{
-				System.out.println(i+"x"+j+"="+i*j);
-			}System.out.print("\t");
+				System.out.println( +i+"x"+j+"="+i*j);
+			}
+			
 		}
 
 	}
 
 }
+
